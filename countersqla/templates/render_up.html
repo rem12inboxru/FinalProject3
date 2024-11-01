@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>СТАРТ</title>
+</head>
+<h1> СТАРТ </h1>
+<body>
+    <form method="post">
+         {% csrf_token %}
+
+         <label for="timeframe">&nbsp;&nbsp;&nbsp; Введите таймфрейм:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+         <input type="number" name="timeframe" maxlength="2" required>
+        <p></p>
+
+         <label for="number_req"> Введите количество циклов: </label>
+         <input type="number" name="number_req" minlength="1" required>
+        <p></p>
+        <p></p>
+        <button type="submit"> Рассчитать </button>
+        <p></p>
+
+    </form>
+
+    <button onclick="window.location.href = 'http://127.0.0.1:8000/pausa';">  Дальше  </button>
+
+
+
+</body>
+</html>
